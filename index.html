@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stilus.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap gyakorlás</title>
+</head>
+    <body>
+        <form action="#" method="get">
+            <fieldset>
+                <!-- kereten lévő szöveg -->
+                <legend>Néző adatai</legend>
+                <label for="neve">Név: </label>
+                <input type="text" id="neve" name="nev" value="Tóth Géza" size="20">
+                <!-- label for és input id egyezzen -->
+                <label for="kedvenc_film">Kedvenc film: </label>
+                <input type="text" id="kedvenc_film" name="film" value="A hős" size="20">
+                <br>
+                <label for="filmek_szama">Filmek száma: </label>
+                <input type="range" id="filmek_szama" name="film_szam" oninput="this.form.f_sz.value=this.value" max="20">
+                <input type="number" name="f_sz" size="6" oninput="this.form.film_szam.value=this.value" max="20">
+                <label for="datum">Dátum: </label>
+                <input type="date" id="datum" name="datum"  size="20">
+                <br>
+                <div class="kuldes">
+                    <input type="submit" id="submit" value="Küldés">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

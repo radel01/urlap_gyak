@@ -1,0 +1,21 @@
+/*minden beviteli mezőre érvényes*/
+input{
+    margin: 5px;
+}
+/*csak az adott típusú bev. mezőre érvényes */
+input[type=submit] {
+    background-color: rgb(230, 173, 196);
+    text-align: center;
+}
+.kuldes{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+/*az aktuálisan íródó mező tulajdonsága*/
+input[type=text]:focus {
+    background-color: rgb(230, 173, 196);
+}
+input[type=date]:focus {
+    background-color: rgb(230, 173, 196);
+}
